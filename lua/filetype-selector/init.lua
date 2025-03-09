@@ -9,6 +9,7 @@ M.filetypes = {
 	"yaml",
 	"json",
 	"xml",
+	"toml",
 	"dockerfile",
 	"javascript",
 	"lua",
@@ -18,7 +19,7 @@ M.filetypes = {
 }
 
 function M.set_filetype()
-	vim.ui.select(M.filetypes, { prompt = "Choose filetype:" }, function(choice)
+	vim.ui.select(M.filetypes, { prompt = "Set filetype:" }, function(choice)
 		if choice then
 			vim.cmd("setfiletype " .. choice)
 		end
