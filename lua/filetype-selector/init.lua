@@ -3,7 +3,7 @@ local M = {}
 M.filetypes = {
 	"python",
 	"cisco",
-	"junos",
+	"j2",
 	"markdown",
 	"bash",
 	"yaml",
